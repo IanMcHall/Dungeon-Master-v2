@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "StW+AByMVJHM7uF3jXECKdDppBrksCBBelEgsxKSvKzB2d1L5wc7P3FcTnvBwXyeqYCf9Kt4pFRKthXmy3J1Dw==",
+  "success": true,
+  "projectFilePath": "/home/ian/Documents/AdventureGuide-main/DungeonMaster.csproj",
+  "expectedPackageFiles": [
+    "/home/ian/.nuget/packages/csvhelper/27.2.1/csvhelper.27.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

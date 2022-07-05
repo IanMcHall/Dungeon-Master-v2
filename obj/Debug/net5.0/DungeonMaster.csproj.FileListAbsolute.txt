@@ -1,0 +1,94 @@
+C:/Users/Ian/Desktop/AdventureGuide/bin/Debug/net5.0/DungeonMaster.exe
+C:/Users/Ian/Desktop/AdventureGuide/bin/Debug/net5.0/DungeonMaster.deps.json
+C:/Users/Ian/Desktop/AdventureGuide/bin/Debug/net5.0/DungeonMaster.runtimeconfig.json
+C:/Users/Ian/Desktop/AdventureGuide/bin/Debug/net5.0/DungeonMaster.runtimeconfig.dev.json
+C:/Users/Ian/Desktop/AdventureGuide/bin/Debug/net5.0/DungeonMaster.dll
+C:/Users/Ian/Desktop/AdventureGuide/bin/Debug/net5.0/ref/DungeonMaster.dll
+C:/Users/Ian/Desktop/AdventureGuide/bin/Debug/net5.0/DungeonMaster.pdb
+C:/Users/Ian/Desktop/AdventureGuide/obj/Debug/net5.0/DungeonMaster.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Ian/Desktop/AdventureGuide/obj/Debug/net5.0/DungeonMaster.AssemblyInfoInputs.cache
+C:/Users/Ian/Desktop/AdventureGuide/obj/Debug/net5.0/DungeonMaster.AssemblyInfo.cs
+C:/Users/Ian/Desktop/AdventureGuide/obj/Debug/net5.0/DungeonMaster.csproj.CoreCompileInputs.cache
+C:/Users/Ian/Desktop/AdventureGuide/obj/Debug/net5.0/DungeonMaster.dll
+C:/Users/Ian/Desktop/AdventureGuide/obj/Debug/net5.0/ref/DungeonMaster.dll
+C:/Users/Ian/Desktop/AdventureGuide/obj/Debug/net5.0/DungeonMaster.pdb
+C:/Users/Ian/Desktop/AdventureGuide/obj/Debug/net5.0/DungeonMaster.genruntimeconfig.cache
+C:/Users/Ian/Desktop/AdventureGuide/obj/Debug/net5.0/DungeonMaster.csproj.AssemblyReference.cache
+C:/Users/Ian/Desktop/Dungeon Master/bin/Debug/net5.0/DungeonMaster.exe
+C:/Users/Ian/Desktop/Dungeon Master/bin/Debug/net5.0/DungeonMaster.deps.json
+C:/Users/Ian/Desktop/Dungeon Master/bin/Debug/net5.0/DungeonMaster.runtimeconfig.json
+C:/Users/Ian/Desktop/Dungeon Master/bin/Debug/net5.0/DungeonMaster.runtimeconfig.dev.json
+C:/Users/Ian/Desktop/Dungeon Master/bin/Debug/net5.0/DungeonMaster.dll
+C:/Users/Ian/Desktop/Dungeon Master/bin/Debug/net5.0/ref/DungeonMaster.dll
+C:/Users/Ian/Desktop/Dungeon Master/bin/Debug/net5.0/DungeonMaster.pdb
+C:/Users/Ian/Desktop/Dungeon Master/obj/Debug/net5.0/DungeonMaster.csproj.AssemblyReference.cache
+C:/Users/Ian/Desktop/Dungeon Master/obj/Debug/net5.0/DungeonMaster.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Ian/Desktop/Dungeon Master/obj/Debug/net5.0/DungeonMaster.AssemblyInfoInputs.cache
+C:/Users/Ian/Desktop/Dungeon Master/obj/Debug/net5.0/DungeonMaster.AssemblyInfo.cs
+C:/Users/Ian/Desktop/Dungeon Master/obj/Debug/net5.0/DungeonMaster.csproj.CoreCompileInputs.cache
+C:/Users/Ian/Desktop/Dungeon Master/obj/Debug/net5.0/DungeonMaster.dll
+C:/Users/Ian/Desktop/Dungeon Master/obj/Debug/net5.0/ref/DungeonMaster.dll
+C:/Users/Ian/Desktop/Dungeon Master/obj/Debug/net5.0/DungeonMaster.pdb
+C:/Users/Ian/Desktop/Dungeon Master/obj/Debug/net5.0/DungeonMaster.genruntimeconfig.cache
+C:/Users/Ian/Desktop/Dungeon Master/bin/Debug/net5.0/CsvHelper.dll
+C:/Users/Ian/Desktop/Dungeon Master/obj/Debug/net5.0/DungeonMaster.csproj.CopyComplete
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.deps.json
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.runtimeconfig.json
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.runtimeconfig.dev.json
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.dll
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.pdb
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/bin/Debug/net5.0/CsvHelper.dll
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.csproj.AssemblyReference.cache
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.GeneratedMSBuildEditorConfig.editorconfig
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.AssemblyInfoInputs.cache
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.AssemblyInfo.cs
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.csproj.CoreCompileInputs.cache
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.csproj.CopyComplete
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.dll
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/obj/Debug/net5.0/refint/DungeonMaster.dll
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.pdb
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.genruntimeconfig.cache
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/obj/Debug/net5.0/ref/DungeonMaster.dll
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/bin/Debug/net5.0/bin/Debug/net5.0/Characters.csv
+/home/ian/Desktop/AdventureGuide-main(1)/AdventureGuide-main/bin/Debug/net5.0/Characters.csv
+/home/ian/Desktop/AdventureGuide-main/bin/Debug/net5.0/Characters.csv
+/home/ian/Desktop/AdventureGuide-main/bin/Debug/net5.0/bin/Debug/net5.0/Characters.csv
+/home/ian/Desktop/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster
+/home/ian/Desktop/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.deps.json
+/home/ian/Desktop/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.runtimeconfig.json
+/home/ian/Desktop/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.runtimeconfig.dev.json
+/home/ian/Desktop/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.dll
+/home/ian/Desktop/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.pdb
+/home/ian/Desktop/AdventureGuide-main/bin/Debug/net5.0/CsvHelper.dll
+/home/ian/Desktop/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.csproj.AssemblyReference.cache
+/home/ian/Desktop/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.GeneratedMSBuildEditorConfig.editorconfig
+/home/ian/Desktop/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.AssemblyInfoInputs.cache
+/home/ian/Desktop/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.AssemblyInfo.cs
+/home/ian/Desktop/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.csproj.CoreCompileInputs.cache
+/home/ian/Desktop/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.csproj.CopyComplete
+/home/ian/Desktop/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.dll
+/home/ian/Desktop/AdventureGuide-main/obj/Debug/net5.0/refint/DungeonMaster.dll
+/home/ian/Desktop/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.pdb
+/home/ian/Desktop/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.genruntimeconfig.cache
+/home/ian/Desktop/AdventureGuide-main/obj/Debug/net5.0/ref/DungeonMaster.dll
+/home/ian/Documents/AdventureGuide-main/bin/Debug/net5.0/Characters.csv
+/home/ian/Documents/AdventureGuide-main/bin/Debug/net5.0/bin/Debug/net5.0/Characters.csv
+/home/ian/Documents/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster
+/home/ian/Documents/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.deps.json
+/home/ian/Documents/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.runtimeconfig.json
+/home/ian/Documents/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.runtimeconfig.dev.json
+/home/ian/Documents/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.dll
+/home/ian/Documents/AdventureGuide-main/bin/Debug/net5.0/DungeonMaster.pdb
+/home/ian/Documents/AdventureGuide-main/bin/Debug/net5.0/CsvHelper.dll
+/home/ian/Documents/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.csproj.AssemblyReference.cache
+/home/ian/Documents/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.GeneratedMSBuildEditorConfig.editorconfig
+/home/ian/Documents/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.AssemblyInfoInputs.cache
+/home/ian/Documents/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.AssemblyInfo.cs
+/home/ian/Documents/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.csproj.CoreCompileInputs.cache
+/home/ian/Documents/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.csproj.CopyComplete
+/home/ian/Documents/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.dll
+/home/ian/Documents/AdventureGuide-main/obj/Debug/net5.0/refint/DungeonMaster.dll
+/home/ian/Documents/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.pdb
+/home/ian/Documents/AdventureGuide-main/obj/Debug/net5.0/DungeonMaster.genruntimeconfig.cache
+/home/ian/Documents/AdventureGuide-main/obj/Debug/net5.0/ref/DungeonMaster.dll

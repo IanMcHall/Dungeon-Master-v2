@@ -1,0 +1,5 @@
+There are two branches for this repo: "Main" and "Master." Master should be the default. MAKE SURE YOU DOWNLOAD THE CODE FROM MASTER, AS THE CODE FROM MAIN IS BROKEN AND WILL NOT WORK. For my project requirements, I was meant to have at least five commits. While the master branch only has three commits (possibly four after this updated ReadMe), you can check and see that there were many more in the initial main branch. 
+
+This program is a simple Dungeons and Dragons character creator. The user is able to create a list of characters and also review this list of characters. At this time, characters can be neither edited nor deleted from within the program, though both of these things are possible through manually editing the CSV file located within the program files. There are three sample characters included on the CSV.
+
+This program utilizes a master loop that allows for continuous creation or viewing of characters as well as the ability to exit the program. The program features a list that is populated with several values, which are then retrieved for use in the program. Finally, the program reads from (along with writing to) a CSV files. 
