@@ -1053,8 +1053,96 @@ namespace DungeonMaster
                 }
             } while (!characterClassStatus);
 
+            Random stat = new Random();
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Roll for Strength          ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.ReadKey();
+            int characterStrength = stat.Next(3, 19);
+            Console.WriteLine($"{characterStrength}");
+            Console.ReadKey();
+            
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Roll for Dexterity         ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.ReadKey();
+            int characterDexterity = stat.Next(3, 19);
+            Console.WriteLine($"{characterDexterity}");
+            Console.ReadKey();
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Roll for Constitution      ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.ReadKey();
+            int characterConstitution = stat.Next(3, 19);
+            Console.WriteLine($"{characterConstitution}");
+            Console.ReadKey();
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Roll for Intelligence      ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.ReadKey();
+            int characterIntelligence = stat.Next(3, 19);
+            Console.WriteLine($"{characterIntelligence}");
+            Console.ReadKey();
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Roll for Wisdom            ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.ReadKey();
+            int characterWisdom = stat.Next(3, 19);
+            Console.WriteLine($"{characterWisdom}");
+            Console.ReadKey();
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Roll for Charisma          ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("***********************************");
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.ReadKey();
+            int characterCharisma = stat.Next(3, 19);
+            Console.WriteLine($"{characterCharisma}");
+            Console.ReadKey();
+
             Character character = new Character(playerName, characterName, characterBackground, characterAlignment,
-                characterLevel, characterRace, characterClass);
+                characterLevel, characterRace, characterClass, characterStrength, characterDexterity, characterConstitution,
+                characterIntelligence, characterWisdom, characterCharisma);
             characters.Add(character);
 
             WriteToCsv(characters);
@@ -1097,6 +1185,13 @@ namespace DungeonMaster
                         Console.WriteLine($"Race: {character.CharacterRace}");
                         Console.WriteLine($"Background: {character.CharacterBackground}");
                         Console.WriteLine($"Alignment: {character.CharacterAlignment}");
+                        Console.WriteLine($"Strength: {character.CharacterStrength}");
+                        Console.WriteLine($"Dexterity: {character.CharacterDexterity}");
+                        Console.WriteLine($"Constitution: {character.CharacterConstitution}");
+                        Console.WriteLine($"Intelligence: {character.CharacterIntelligence}");
+                        Console.WriteLine($"Wisdom: {character.CharacterWisdom}");
+                        Console.WriteLine($"Charisma: {character.CharacterCharisma}");
+
                         Console.WriteLine();
                         Console.WriteLine();
 

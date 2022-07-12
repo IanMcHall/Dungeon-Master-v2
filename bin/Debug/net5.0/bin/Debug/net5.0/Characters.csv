@@ -1,4 +1,8 @@
-PlayerName,CharacterName,CharacterLevel,CharacterBackground,CharacterAlignment,CharacterRace,CharacterClass
-Ian,Sol,1,Acolyte,Lawful Good,Aarakocra,Barbarian
-Kasie,Luna,2,Anthropologist,Neutral Good,Aasimar,Bard
-Hunter,Nova,3,Archaeologist,Chaotic Good,Bugbear,Cleric
+PlayerName,CharacterName,CharacterLevel,CharacterBackground,CharacterAlignment,CharacterRace,CharacterClass,CharacterStrength,CharacterDexterity,CharacterConstitution,CharacterIntelligence,CharacterWisdom,CharacterCharisma
+Ian,Sol,1,Acolyte,Lawful Good,Aarakocra,Barbarian,11,12,16,14,13,10
+Kasie,Luna,2,Anthropologist,Neutral Good,Aasimar,Bard,14,11,13,15,14,8
+Hunter,Nova,3,Archaeologist,Chaotic Good,Bugbear,Cleric,9,12,9,7,14,13
+Thomas,Galactus,4,Athlete,Lawful Neutral,Centaur,Druid,10,7,13,9,17,6
+Noah,Celeste,5,Azorius Functionary,True Neutral,Changeling,Fighter,17,11,18,12,5,12
+Kirstin,Constella,6,Boros Legionnaire,Chaotic Neutral,Dragonborn,Monk,16,11,10,15,14,5
+Daniel,"Dan, Slayer of Stars",7,Celebrity Adventurer's Scoin,Lawful Evil,Dwarf,Paladin,15,13,7,11,15,10
