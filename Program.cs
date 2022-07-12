@@ -37,17 +37,21 @@ namespace DungeonMaster
             }
         }
 
+        
+
         static void Main(string[] args)
+
         {
+            string flair = "***********************************";
             characters = ReadFromCsv();
             
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("            Welcome To             ");
             Console.WriteLine("            Dungeon Master         ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
             string userSelection;
@@ -75,25 +79,26 @@ namespace DungeonMaster
             Console.WriteLine("Until fate sees your return...");
             Console.Read();
         }
-        private static void CreateCharacter()
+        private static async void CreateCharacter()
         {
-            
+            string flair = "***********************************";
+
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("         What is your name?           ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
             string playerName = Console.ReadLine();
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("   What is your character name?   ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
             string characterName = Console.ReadLine();
@@ -101,11 +106,11 @@ namespace DungeonMaster
 
             
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("   What is your character level?   ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
             bool characterLevelStatus = false;
@@ -288,11 +293,11 @@ namespace DungeonMaster
 
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("      What is your alignment?      ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("1: Lawful Good");
             Console.WriteLine("2: Neutral Good");
@@ -363,11 +368,11 @@ namespace DungeonMaster
 
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("     What is your background?      ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("1: Acolyte");
             Console.WriteLine("2: Anthropologist");
@@ -713,11 +718,11 @@ namespace DungeonMaster
 
             //Hello if you're seeing this!
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("        What is your race?         ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("1. Aarakocra");
             Console.WriteLine("2. Aasimar");
@@ -970,12 +975,17 @@ namespace DungeonMaster
             } while (!characterRaceStatus);
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("        What is your class?        ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
+            var client = DnD5eAPIClient.Client();
+            DnDResult<DnD5EClass> classes = new DnDResult<DnD5EClass>();
+            try {classes = await client.GetClassesAsync(); } catch (Exception e) { Console.WriteLine("API is currently down"); } //ensures API is active. Maybe write this to file.
+            
+            Console.WriteLine(classes.Count);
             Console.WriteLine("1. Barbarian");
             Console.WriteLine("2. Bard");
             Console.WriteLine("3. Cleric");
@@ -1056,12 +1066,12 @@ namespace DungeonMaster
             Random stat = new Random();
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("        Press any key to           ");
             Console.WriteLine("        Roll for Strength          ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.ReadKey();
@@ -1071,12 +1081,12 @@ namespace DungeonMaster
             
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("        Press any key to           ");
             Console.WriteLine("        Roll for Dexterity         ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.ReadKey();
@@ -1085,12 +1095,12 @@ namespace DungeonMaster
             Console.ReadKey();
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("        Press any key to           ");
             Console.WriteLine("        Roll for Constitution      ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.ReadKey();
@@ -1099,12 +1109,12 @@ namespace DungeonMaster
             Console.ReadKey();
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("        Press any key to           ");
             Console.WriteLine("        Roll for Intelligence      ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.ReadKey();
@@ -1113,12 +1123,12 @@ namespace DungeonMaster
             Console.ReadKey();
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("        Press any key to           ");
             Console.WriteLine("        Roll for Wisdom            ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.ReadKey();
@@ -1127,12 +1137,12 @@ namespace DungeonMaster
             Console.ReadKey();
 
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("        Press any key to           ");
             Console.WriteLine("        Roll for Charisma          ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.ReadKey();
@@ -1150,24 +1160,25 @@ namespace DungeonMaster
 
             
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(" You have created a new character! ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
         }
         static void ReviewCharacter()
         {
+            string flair = "***********************************";
 
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("           Characters              ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("***********************************");
+            Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine();
 

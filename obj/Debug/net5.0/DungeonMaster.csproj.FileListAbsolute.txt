@@ -116,3 +116,4 @@ C:\Users\ianmc\OneDrive\Desktop\AdventureGuide-master\bin\Debug\net5.0\Newtonsof
 C:\Users\ianmc\OneDrive\Desktop\AdventureGuide-master\obj\Debug\net5.0\DungeonMaster.csproj.CopyComplete
 C:\Users\ianmc\OneDrive\Desktop\AdventureGuide-master\obj\Debug\net5.0\DungeonMaster.genruntimeconfig.cache
 C:\Users\ianmc\OneDrive\Desktop\AdventureGuide-master\obj\Debug\net5.0\ref\DungeonMaster.dll
+C:\Users\ianmc\OneDrive\Desktop\AdventureGuide-master\bin\Debug\net5.0\RestEase.dll
