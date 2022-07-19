@@ -5,9 +5,7 @@ using System.IO;
 using CsvHelper;
 using CsvHelper.Configuration;
 using System.Globalization;
-
-
-
+using System.Threading.Tasks;
 
 namespace DungeonMaster
 {
@@ -58,7 +56,7 @@ namespace DungeonMaster
 
             do
             {
-                Console.WriteLine("1. Create a character");
+                Console.WriteLine("1. Create a Character");
                 Console.WriteLine("2. Review Characters");
                 Console.WriteLine("9. Exit");
 
@@ -67,7 +65,8 @@ namespace DungeonMaster
                 switch (userSelection)
                 {
                     case "1":
-                        CreateCharacter();
+                      var task = CreateCharacter();
+                        task.Wait();
                         break;
 
                     case "2":
@@ -79,7 +78,7 @@ namespace DungeonMaster
             Console.WriteLine("Until fate sees your return...");
             Console.Read();
         }
-        private static async void CreateCharacter()
+        private static async Task CreateCharacter()
         {
             string flair = "***********************************";
 
@@ -983,10 +982,15 @@ namespace DungeonMaster
             Console.ForegroundColor = ConsoleColor.White;
             var client = DnD5eAPIClient.Client();
             DnDResult<DnD5EClass> classes = new DnDResult<DnD5EClass>();
-            try {classes = await client.GetClassesAsync(); } catch (Exception e) { Console.WriteLine("API is currently down"); } //ensures API is active. Maybe write this to file.
+            try {
+                classes = await client.GetClassesAsync();
+            } catch (Exception e) { Console.WriteLine("API is currently down"); } //ensures API is active. Maybe write this to file.
             
-            Console.WriteLine(classes.Count);
-            Console.WriteLine("1. Barbarian");
+            for (int i = 0; i < classes.Results.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {classes.Results[i].Name}");
+            }
+            /* Console.WriteLine("1. Barbarian");
             Console.WriteLine("2. Bard");
             Console.WriteLine("3. Cleric");
             Console.WriteLine("4. Druid");
@@ -998,7 +1002,7 @@ namespace DungeonMaster
             Console.WriteLine("10. Sorcerer");
             Console.WriteLine("11. Warlock");
             Console.WriteLine("12. Wizard");
-            Console.WriteLine("13. Artificer");
+            Console.WriteLine("13. Artificer"); */
 
             bool characterClassStatus = false;
             string characterClass;
@@ -1037,23 +1041,23 @@ namespace DungeonMaster
                         characterClassStatus = true;
                         break;
                     case "8":
-                        characterClass = "Rogue";
+                        characterClass = "Ranger";
                         characterClassStatus = true;
                         break;
                     case "9":
-                        characterClass = "Sorcerer";
+                        characterClass = "Rogue";
                         characterClassStatus = true;
                         break;
                     case "10":
-                        characterClass = "Warlock";
+                        characterClass = "Sorcerer";
                         characterClassStatus = true;
                         break;
                     case "11":
-                        characterClass = "Wizard";
+                        characterClass = "Warlock";
                         characterClassStatus = true;
                         break;
                     case "12":
-                        characterClass = "Artificer";
+                        characterClass = "Wizard";
                         characterClassStatus = true;
                         break;
                     default:
@@ -1065,6 +1069,8 @@ namespace DungeonMaster
 
             Random stat = new Random();
 
+
+            //make these take ENTER only
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
