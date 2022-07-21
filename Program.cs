@@ -376,6 +376,8 @@ namespace DungeonMaster
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
+            //Background only has one option, Acolyte, on the API? Remove, or keep hard coded?
+
             Console.WriteLine("1: Acolyte");
             Console.WriteLine("2: Anthropologist");
             Console.WriteLine("3: Archaeologist");
@@ -716,9 +718,6 @@ namespace DungeonMaster
                 }
             } while (!characterBackgroundStatus);
 
-
-
-            //Hello if you're seeing this!
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
@@ -726,53 +725,19 @@ namespace DungeonMaster
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("1. Aarakocra");
-            Console.WriteLine("2. Aasimar");
-            Console.WriteLine("3. Bugbear");
-            Console.WriteLine("4. Centaur");
-            Console.WriteLine("5. Changeling");
-            Console.WriteLine("6. Dragonborn");
-            Console.WriteLine("7. Dwarf");
-            Console.WriteLine("8. Elf");
-            Console.WriteLine("9. Fairy");
-            Console.WriteLine("10. Feral Tiefling");
-            Console.WriteLine("11. Firbolg");
-            Console.WriteLine("12. Genasi");
-            Console.WriteLine("13. Gith");
-            Console.WriteLine("14. Gnome");
-            Console.WriteLine("15. Goblin");
-            Console.WriteLine("16. Goliath");
-            Console.WriteLine("17. Grung");
-            Console.WriteLine("18. Half Elf");
-            Console.WriteLine("19. Half Orc");
-            Console.WriteLine("20. Halfling");
-            Console.WriteLine("21. Harengon");
-            Console.WriteLine("22. Hobgoblin");
-            Console.WriteLine("23. Human");
-            Console.WriteLine("24. Kalashtar");
-            Console.WriteLine("25. Kenku");
-            Console.WriteLine("26. Kobold");
-            Console.WriteLine("27. Leonin");
-            Console.WriteLine("28. Lineages");
-            Console.WriteLine("29. Lizardfolk");
-            Console.WriteLine("30. Locathah");
-            Console.WriteLine("31. Loxodon");
-            Console.WriteLine("32. Minotaur");
-            Console.WriteLine("33. Orc");
-            Console.WriteLine("34. Orc of Eberron");
-            Console.WriteLine("35. Orc of Exandria");
-            Console.WriteLine("36. Owlin");
-            Console.WriteLine("37. Satyr");
-            Console.WriteLine("38. Shifter");
-            Console.WriteLine("39. Simic Hybrid");
-            Console.WriteLine("40. Tabaxi");
-            Console.WriteLine("41. Tiefling");
-            Console.WriteLine("42. Tortle");
-            Console.WriteLine("43. Triton");
-            Console.WriteLine("44. Vedalken");
-            Console.WriteLine("45. Verdan");
-            Console.WriteLine("46. Warforged");
-            Console.WriteLine("47. Yuanti Pureblood");
+
+            
+            DnDResult<DnD5ERaces> races = new DnDResult<DnD5ERaces>();
+            try
+            {
+                races = await client.GetRacesAsync();
+            }
+            catch (Exception e) { Console.WriteLine("API is currently down"); } //ensures API is active. Maybe write this to file.
+
+            for (int i = 0; i < races.Results.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {races.Results[i].Name}");
+            }
 
             bool characterRaceStatus = false;
             string characterRace;
@@ -782,191 +747,39 @@ namespace DungeonMaster
                 switch (characterRace)
                 {
                     case "1":
-                        characterRace = "Aarakocra";
-                        characterRaceStatus = true;
-                        break;
-                    case "2":
-                        characterRace = "Aasimar";
-                        characterRaceStatus = true;
-                        break;
-                    case "3":
-                        characterRace = "Bugbear";
-                        characterRaceStatus = true;
-                        break;
-                    case "4":
-                        characterRace = "Centaur";
-                        characterRaceStatus = true;
-                        break;
-                    case "5":
-                        characterRace = "Changeling";
-                        characterRaceStatus = true;
-                        break;
-                    case "6":
                         characterRace = "Dragonborn";
                         characterRaceStatus = true;
                         break;
-                    case "7":
+                    case "2":
                         characterRace = "Dwarf";
                         characterRaceStatus = true;
                         break;
-                    case "8":
+                    case "3":
                         characterRace = "Elf";
                         characterRaceStatus = true;
                         break;
-                    case "9":
-                        characterRace = "Fairy";
-                        characterRaceStatus = true;
-                        break;
-                    case "10":
-                        characterRace = "Feral Tiefling";
-                        characterRaceStatus = true;
-                        break;
-                    case "11":
-                        characterRace = "Firbolg";
-                        characterRaceStatus = true;
-                        break;
-                    case "12":
-                        characterRace = "Genasi";
-                        characterRaceStatus = true;
-                        break;
-                    case "13":
-                        characterRace = "Gith";
-                        characterRaceStatus = true;
-                        break;
-                    case "14":
+                    case "4":
                         characterRace = "Gnome";
                         characterRaceStatus = true;
                         break;
-                    case "15":
-                        characterRace = "Goblin";
+                    case "5":
+                        characterRace = "Half-Elf";
                         characterRaceStatus = true;
                         break;
-                    case "16":
-                        characterRace = "Goliath";
+                    case "6":
+                        characterRace = "Half-Orc";
                         characterRaceStatus = true;
                         break;
-                    case "17":
-                        characterRace = "Grung";
+                    case "7":
+                        characterRace = "Halfing";
                         characterRaceStatus = true;
                         break;
-                    case "18":
-                        characterRace = "Half Elf";
-                        characterRaceStatus = true;
-                        break;
-                    case "19":
-                        characterRace = "Half Orc";
-                        characterRaceStatus = true;
-                        break;
-                    case "20":
-                        characterRace = "Halfling";
-                        characterRaceStatus = true;
-                        break;
-                    case "21":
-                        characterRace = "Harengon";
-                        characterRaceStatus = true;
-                        break;
-                    case "22":
-                        characterRace = "Hobgoblin";
-                        characterRaceStatus = true;
-                        break;
-                    case "23":
+                    case "8":
                         characterRace = "Human";
                         characterRaceStatus = true;
                         break;
-                    case "24":
-                        characterRace = "Kalashtar";
-                        characterRaceStatus = true;
-                        break;
-                    case "25":
-                        characterRace = "Kenku";
-                        characterRaceStatus = true;
-                        break;
-                    case "26":
-                        characterRace = "Kobold";
-                        characterRaceStatus = true;
-                        break;
-                    case "27":
-                        characterRace = "Leonin";
-                        characterRaceStatus = true;
-                        break;
-                    case "28":
-                        characterRace = "Lineages";
-                        characterRaceStatus = true;
-                        break;
-                    case "29":
-                        characterRace = "Lizardfolk";
-                        characterRaceStatus = true;
-                        break;
-                    case "30":
-                        characterRace = "Locathah";
-                        characterRaceStatus = true;
-                        break;
-                    case "31":
-                        characterRace = "Loxodon";
-                        characterRaceStatus = true;
-                        break;
-                    case "32":
-                        characterRace = "Minotaur";
-                        characterRaceStatus = true;
-                        break;
-                    case "33":
-                        characterRace = "Orc";
-                        characterRaceStatus = true;
-                        break;
-                    case "34":
-                        characterRace = "Orc of Eberron";
-                        characterRaceStatus = true;
-                        break;
-                    case "35":
-                        characterRace = "Orc of Exandria";
-                        characterRaceStatus = true;
-                        break;
-                    case "36":
-                        characterRace = "Owlin";
-                        characterRaceStatus = true;
-                        break;
-                    case "37":
-                        characterRace = "Satyr";
-                        characterRaceStatus = true;
-                        break;
-                    case "38":
-                        characterRace = "Shifter";
-                        characterRaceStatus = true;
-                        break;
-                    case "39":
-                        characterRace = "Simic Hybrid";
-                        characterRaceStatus = true;
-                        break;
-                    case "40":
-                        characterRace = "Tabaxi";
-                        characterRaceStatus = true;
-                        break;
-                    case "41":
+                    case "9":
                         characterRace = "Tiefling";
-                        characterRaceStatus = true;
-                        break;
-                    case "42":
-                        characterRace = "Tortle";
-                        characterRaceStatus = true;
-                        break;
-                    case "43":
-                        characterRace = "Triton";
-                        characterRaceStatus = true;
-                        break;
-                    case "44":
-                        characterRace = "Vedalken";
-                        characterRaceStatus = true;
-                        break;
-                    case "45":
-                        characterRace = "Verdan";
-                        characterRaceStatus = true;
-                        break;
-                    case "46":
-                        characterRace = "Warforged";
-                        characterRaceStatus = true;
-                        break;
-                    case "47":
-                        characterRace = "Yuanti Pureblood";
                         characterRaceStatus = true;
                         break;
                     default:
@@ -1059,8 +872,6 @@ namespace DungeonMaster
 
             Random stat = new Random();
 
-
-            //make these take ENTER only
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;

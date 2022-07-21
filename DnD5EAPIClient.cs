@@ -19,7 +19,10 @@ namespace DungeonMaster
 
             [Get("alignments")]
             Task<DnDResult<DnD5EAlignments>> GetAlignmentsAsync();
-           // Task<DnDResult<DnD5EAlignment>> GetAlignmentAsync(); //hypotetical task
+
+            [Get("races")]
+            Task<DnDResult<DnD5ERaces>> GetRacesAsync();
+           
 
         }
 
