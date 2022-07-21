@@ -16,6 +16,9 @@ namespace DungeonMaster
             // "{userId}" is a placeholder in the URL: the value from the "userId" method parameter is used
             [Get("classes")]
             Task<DnDResult<DnD5EClass>> GetClassesAsync();
+
+            [Get("alignments")]
+            Task<DnDResult<DnD5EAlignments>> GetAlignmentsAsync();
            // Task<DnDResult<DnD5EAlignment>> GetAlignmentAsync(); //hypotetical task
 
         }

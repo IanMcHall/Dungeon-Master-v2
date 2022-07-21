@@ -56,8 +56,9 @@ namespace DungeonMaster
 
             do
             {
-                Console.WriteLine("1. Create a Character");
+                Console.WriteLine("1. Create Character");
                 Console.WriteLine("2. Review Characters");
+                Console.WriteLine("3. Session Calendar");
                 Console.WriteLine("9. Exit");
 
                 userSelection = Console.ReadLine();
@@ -71,6 +72,10 @@ namespace DungeonMaster
 
                     case "2":
                         ReviewCharacter();
+                        break;
+
+                    case "3":
+                        SessionTime();
                         break;
                 }
             } while (userSelection != "9");
@@ -298,20 +303,23 @@ namespace DungeonMaster
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("1: Lawful Good");
-            Console.WriteLine("2: Neutral Good");
-            Console.WriteLine("3: Chaotic Good");
-            Console.WriteLine("4: Lawful Nuetral");
-            Console.WriteLine("5: True Nuetral");
-            Console.WriteLine("6: Chaotic Neutral");
-            Console.WriteLine("7: Lawful Evil");
-            Console.WriteLine("8: Neutral Evil");
-            Console.WriteLine("9: Chaotic Evil");
-            Console.WriteLine("10: Unaligned");
 
+            var client = DnD5eAPIClient.Client();
+            DnDResult<DnD5EAlignments> alignments = new DnDResult<DnD5EAlignments>();
+            try
+            {
+                alignments = await client.GetAlignmentsAsync();
+            }
+            catch (Exception e) { Console.WriteLine("API is currently down"); } //ensures API is active. Maybe write this to file.
+
+            for (int i = 0; i < alignments.Results.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {alignments.Results[i].Name}");
+            }
 
             bool characterAlignmentStatus = false;
             string characterAlignment;
+            
             do
             {
                 characterAlignment = Console.ReadLine();
@@ -319,31 +327,31 @@ namespace DungeonMaster
                 switch (characterAlignment)
                 {
                     case "1":
-                        characterAlignment = "Lawful Good";
+                        characterAlignment = "Chaotic Evil";
                         characterAlignmentStatus = true;
                         break;
                     case "2":
-                        characterAlignment = "Neutral Good";
-                        characterAlignmentStatus = true;
-                        break;
-                    case "3":
                         characterAlignment = "Chaotic Good";
                         characterAlignmentStatus = true;
                         break;
-                    case "4":
-                        characterAlignment = "Lawful Neutral";
-                        characterAlignmentStatus = true;
-                        break;
-                    case "5":
-                        characterAlignment = "True Neutral";
-                        characterAlignmentStatus = true;
-                        break;
-                    case "6":
+                    case "3":
                         characterAlignment = "Chaotic Neutral";
                         characterAlignmentStatus = true;
                         break;
-                    case "7":
+                    case "4":
                         characterAlignment = "Lawful Evil";
+                        characterAlignmentStatus = true;
+                        break;
+                    case "5":
+                        characterAlignment = "Lawful Good";
+                        characterAlignmentStatus = true;
+                        break;
+                    case "6":
+                        characterAlignment = "Lawful Neutral";
+                        characterAlignmentStatus = true;
+                        break;
+                    case "7":
+                        characterAlignment = "Neutral";
                         characterAlignmentStatus = true;
                         break;
                     case "8":
@@ -351,11 +359,7 @@ namespace DungeonMaster
                         characterAlignmentStatus = true;
                         break;
                     case "9":
-                        characterAlignment = "Chaotic Evil";
-                        characterAlignmentStatus = true;
-                        break;
-                    case "10":
-                        characterAlignment = "Unaligned";
+                        characterAlignment = "Neutral Good";
                         characterAlignmentStatus = true;
                         break;
                     default:
@@ -364,7 +368,6 @@ namespace DungeonMaster
                         break;
                 }
             } while (!characterAlignmentStatus);
-
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
@@ -980,7 +983,7 @@ namespace DungeonMaster
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
-            var client = DnD5eAPIClient.Client();
+            //var client = DnD5eAPIClient.Client();
             DnDResult<DnD5EClass> classes = new DnDResult<DnD5EClass>();
             try {
                 classes = await client.GetClassesAsync();
@@ -990,19 +993,6 @@ namespace DungeonMaster
             {
                 Console.WriteLine($"{i + 1}. {classes.Results[i].Name}");
             }
-            /* Console.WriteLine("1. Barbarian");
-            Console.WriteLine("2. Bard");
-            Console.WriteLine("3. Cleric");
-            Console.WriteLine("4. Druid");
-            Console.WriteLine("5. Fighter");
-            Console.WriteLine("6. Monk");
-            Console.WriteLine("7. Paladin");
-            Console.WriteLine("8. Ranger");
-            Console.WriteLine("9. Rogue");
-            Console.WriteLine("10. Sorcerer");
-            Console.WriteLine("11. Warlock");
-            Console.WriteLine("12. Wizard");
-            Console.WriteLine("13. Artificer"); */
 
             bool characterClassStatus = false;
             string characterClass;
@@ -1074,87 +1064,87 @@ namespace DungeonMaster
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Press Enter to             ");
             Console.WriteLine("        Roll for Strength          ");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
-            Console.ReadKey();
+            while(Console.ReadKey(true).Key != ConsoleKey.Enter);
             int characterStrength = stat.Next(3, 19);
             Console.WriteLine($"{characterStrength}");
-            Console.ReadKey();
+            
             
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Press Enter to             ");
             Console.WriteLine("        Roll for Dexterity         ");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
-            Console.ReadKey();
+            while (Console.ReadKey(true).Key != ConsoleKey.Enter);
             int characterDexterity = stat.Next(3, 19);
             Console.WriteLine($"{characterDexterity}");
-            Console.ReadKey();
+            
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Press Enter to             ");
             Console.WriteLine("        Roll for Constitution      ");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
-            Console.ReadKey();
+            while(Console.ReadKey(true).Key != ConsoleKey.Enter);
             int characterConstitution = stat.Next(3, 19);
             Console.WriteLine($"{characterConstitution}");
-            Console.ReadKey();
+            
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Press Enter to             ");
             Console.WriteLine("        Roll for Intelligence      ");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
-            Console.ReadKey();
+            while (Console.ReadKey(true).Key != ConsoleKey.Enter);
             int characterIntelligence = stat.Next(3, 19);
             Console.WriteLine($"{characterIntelligence}");
-            Console.ReadKey();
+
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Press Enter to             ");
             Console.WriteLine("        Roll for Wisdom            ");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
-            Console.ReadKey();
+            while (Console.ReadKey(true).Key != ConsoleKey.Enter);
             int characterWisdom = stat.Next(3, 19);
             Console.WriteLine($"{characterWisdom}");
-            Console.ReadKey();
+            
 
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("        Press any key to           ");
+            Console.WriteLine("        Press Enter to             ");
             Console.WriteLine("        Roll for Charisma          ");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(flair);
             Console.ForegroundColor = ConsoleColor.White;
 
-            Console.ReadKey();
+            while (Console.ReadKey(true).Key != ConsoleKey.Enter) ;
             int characterCharisma = stat.Next(3, 19);
             Console.WriteLine($"{characterCharisma}");
-            Console.ReadKey();
+            
 
             Character character = new Character(playerName, characterName, characterBackground, characterAlignment,
                 characterLevel, characterRace, characterClass, characterStrength, characterDexterity, characterConstitution,
@@ -1217,6 +1207,27 @@ namespace DungeonMaster
                     
                     
 
+        }
+        static void SessionTime()
+        {
+            DateTime userDaysLeft;
+            DateTime startDate = DateTime.Now;
+
+            Console.WriteLine("Please enter the date and time of your next game (mm/dd/yyyy 00:01-23:59)");
+            if (DateTime.TryParse(Console.ReadLine(), out userDaysLeft))
+            {
+                
+            }
+            else
+            {
+                Console.WriteLine("You have entered an invalid date. Please try again from the menu.");
+            }
+            //How do we get the error time to not display?
+
+            TimeSpan t = userDaysLeft - startDate;
+            string countDown = string.Format("{0} Days, {1} Hours, {2} Minutes until your next game!", t.Days, t.Hours, t.Minutes);
+
+            Console.WriteLine(countDown);
         }
     }
 }
