@@ -25,7 +25,7 @@ namespace CharacterTest
 
 
             //Act
-            var character = new Character(playerName, characterName, characterLevel, characterAlignment,
+            var character = new Character(playerName, characterName, characterAlignment, characterLevel,
                 characterRace, characterClass, characterStrength, characterDexterity, characterConstitution, characterIntelligence,
                 characterWisdom, characterCharisma);
 

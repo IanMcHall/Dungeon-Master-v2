@@ -23,14 +23,17 @@
     <None Update="Characters.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Remove="CharacterCreatorWorksTest\**" />
     <None Remove="Temp\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="CharacterCreatorWorksTest\**" />
     <Compile Remove="Temp\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="CharacterCreatorWorksTest\**" />
     <EmbeddedResource Remove="Temp\**" />
   </ItemGroup>
 
