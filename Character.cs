@@ -23,7 +23,7 @@ namespace DungeonMaster
         public int CharacterWisdom  { get; set; }
         public int CharacterCharisma { get; set; }
         
-        public Character(){} //Neccesary to preven CSV error
+        public Character(){} //Necesary to prevent CSV error
         public Character(string playerName, string characterName, string characterAlignment, string characterLevel, string characterRace, string characterClass, int characterStrength, int characterDexterity, int characterConstitution, int characterIntelligence, int characterWisdom, int characterCharisma)
         {
             PlayerName = playerName;
