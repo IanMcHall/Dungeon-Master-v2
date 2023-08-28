@@ -117,3 +117,6 @@ C:\Users\ianmc\OneDrive\Desktop\AdventureGuide-master\obj\Debug\net5.0\DungeonMa
 C:\Users\ianmc\OneDrive\Desktop\AdventureGuide-master\obj\Debug\net5.0\DungeonMaster.genruntimeconfig.cache
 C:\Users\ianmc\OneDrive\Desktop\AdventureGuide-master\obj\Debug\net5.0\ref\DungeonMaster.dll
 C:\Users\ianmc\OneDrive\Desktop\AdventureGuide-master\bin\Debug\net5.0\RestEase.dll
+C:\Users\Ian\OneDrive\Documents\Projects\AdventureGuide-master\obj\Debug\net5.0\DungeonMaster.dll
+C:\Users\Ian\OneDrive\Documents\Projects\AdventureGuide-master\obj\Debug\net5.0\refint\DungeonMaster.dll
+C:\Users\Ian\OneDrive\Documents\Projects\AdventureGuide-master\obj\Debug\net5.0\DungeonMaster.pdb

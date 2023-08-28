@@ -13,6 +13,7 @@ namespace DungeonMaster
     class Program1
     {
        static List<Character> characters = new List<Character>();
+        
         static void WriteToCsv(List<Character> characters)
         {
             using (var writer = new StreamWriter("Characters.csv"))
@@ -35,7 +36,7 @@ namespace DungeonMaster
             }
         }
 
-        
+
 
         static void Main(string[] args)
 
@@ -66,8 +67,7 @@ namespace DungeonMaster
                 switch (userSelection)
                 {
                     case "1":
-                      var task = CreateCharacter();
-                        task.Wait();
+                        SelectGame();
                         break;
 
                     case "2":
@@ -83,6 +83,45 @@ namespace DungeonMaster
             Console.WriteLine("Until fate sees your return...");
             Console.Read();
         }
+
+        static void SelectGame()
+        {
+            string flair = "***********************************";
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(flair);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("         Select a game            ");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(flair);
+            Console.ForegroundColor = ConsoleColor.White;
+
+            bool gameSelectionStatus =false;
+            string gameSelection;
+
+            do
+            {
+                Console.WriteLine("1. Dungeons & Dragons");
+             
+
+                gameSelection = Console.ReadLine();
+
+                switch (gameSelection)
+                {
+                    case "1":
+                        var task = CreateCharacter();
+                        task.Wait();
+                        gameSelectionStatus = true;
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid selection. Please try again.");
+                        gameSelectionStatus = false;
+                        break;
+                }
+            } while (!gameSelectionStatus);
+        }
+
         private static async Task CreateCharacter()
         {
             string flair = "***********************************";
@@ -626,6 +665,7 @@ namespace DungeonMaster
             Console.ForegroundColor = ConsoleColor.White;
 
         }
+           
         static void ReviewCharacter()
         {
             string flair = "***********************************";
