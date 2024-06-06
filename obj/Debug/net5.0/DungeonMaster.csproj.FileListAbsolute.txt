@@ -120,3 +120,29 @@ C:\Users\ianmc\OneDrive\Desktop\AdventureGuide-master\bin\Debug\net5.0\RestEase.
 C:\Users\Ian\OneDrive\Documents\Projects\AdventureGuide-master\obj\Debug\net5.0\DungeonMaster.dll
 C:\Users\Ian\OneDrive\Documents\Projects\AdventureGuide-master\obj\Debug\net5.0\refint\DungeonMaster.dll
 C:\Users\Ian\OneDrive\Documents\Projects\AdventureGuide-master\obj\Debug\net5.0\DungeonMaster.pdb
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\Characters.csv
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\bin\Debug\net5.0\Characters.csv
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\DungeonMaster.exe
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\DungeonMaster.deps.json
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\DungeonMaster.runtimeconfig.json
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\DungeonMaster.runtimeconfig.dev.json
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\DungeonMaster.dll
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\DungeonMaster.pdb
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\CsvHelper.dll
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\VisualStudio.SpellChecker.Definitions.dll
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\System.Net.Http.Formatting.dll
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\bin\Debug\net5.0\RestEase.dll
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\DungeonMaster.csproj.AssemblyReference.cache
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\DungeonMaster.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\DungeonMaster.AssemblyInfoInputs.cache
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\DungeonMaster.AssemblyInfo.cs
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\DungeonMaster.csproj.CoreCompileInputs.cache
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\DungeonMaster.sourcelink.json
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\DungeonM.8A24AE58.Up2Date
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\DungeonMaster.dll
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\refint\DungeonMaster.dll
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\DungeonMaster.pdb
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\DungeonMaster.genruntimeconfig.cache
+C:\Users\Ian\OneDrive\Desktop\Dungeon Master\Dungeon-Master-v2\obj\Debug\net5.0\ref\DungeonMaster.dll

@@ -59,7 +59,6 @@ namespace DungeonMaster
             {
                 Console.WriteLine("1. Create Character");
                 Console.WriteLine("2. Review Characters");
-                Console.WriteLine("3. Session Calendar");
                 Console.WriteLine("9. Exit");
 
                 userSelection = Console.ReadLine();
@@ -74,9 +73,6 @@ namespace DungeonMaster
                         ReviewCharacter();
                         break;
 
-                    case "3":
-                        SessionTime();
-                        break;
                 }
             } while (userSelection != "9");
 
@@ -709,28 +705,5 @@ namespace DungeonMaster
                     
 
         }
-        static void SessionTime()
-        {
-            DateTime userDaysLeft;
-            DateTime startDate = DateTime.Now;
-
-            Console.WriteLine("Please enter the date and time of your next game (mm/dd/yyyy 00:01-23:59)");
-            if (DateTime.TryParse(Console.ReadLine(), out userDaysLeft))
-            {
-                
-            }
-            else
-            {
-                Console.WriteLine("You have entered an invalid date. Please try again from the menu.");
-            }
-            //How do we get the error time to not display?
-
-            TimeSpan t = userDaysLeft - startDate;
-            string countDown = string.Format("{0} Days, {1} Hours, {2} Minutes until your next game!", t.Days, t.Hours, t.Minutes);
-
-            Console.WriteLine(countDown);
-        }
     }
 }
-    
-
