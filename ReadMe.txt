@@ -4,3 +4,5 @@ This program utilizes a master loop that allows for continuous creation or viewi
 
 July 2022, session #2 UPDATE:
 The updated application replaces hard coded lists of character alignments, character races, and character classes with information parsed from a web API (the character background option was removed due to lack of support from the API). The program now also implements a unit test to ensure the character creator constructor is functioning correctly, and now includes a feature accessible from the main menu to enter the date of your next game to receive the amount of time remaining until that game. Additionally, the program now will assign strength, dexterity, constitution, intelligence, wisdom, and charisma stats from 3-18 using a random number generator. 
+
+June 2024: Removed depreciated session time and Cyberpunk 2020 compatibility. 
